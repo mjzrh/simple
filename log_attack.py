@@ -185,7 +185,7 @@ def Main():
 
     try:
         start = timer()
-        pp = ThreadPool(2)
+        pp = ThreadPool(40)
         pr = pp.map(Run_Work, woh)
         print('Time: ' + str(timer() - start) + ' seconds')
     except:
