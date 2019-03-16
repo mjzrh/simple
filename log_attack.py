@@ -147,7 +147,7 @@ def wp_install(site):
 	try:
 		url = Domains(site)
 		
-		list_path = ['/new', '/wp', '/wordpress']
+		list_path = ['/','/new', '/wp', '/wordpress']
 		
 		for path in list_path:
 			check = requests.get(url + path + "/wp-admin/setup-config.php" ,headers=headers)
